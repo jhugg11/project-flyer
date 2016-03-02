@@ -14,7 +14,17 @@ class FlyersController extends Controller
 {
     public function create()
     {
-        return view('flyers.create');
+        $countries = \App\Http\Utilities\Country::all();
+
+        return view('flyers.create', compact('countries'));
+    }
+
+    /**
+     * @param Request $request
+     */
+    public function store(Request $request)
+    {
+
     }
 }
 
