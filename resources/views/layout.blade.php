@@ -4,6 +4,9 @@
     <meta charset="UTF-8">
     <title>Project Flyer</title>
     <link rel="stylesheet" href="/css/app.css">
+    <link rel="stylesheet" href="/css/libs.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/dropzone/4.3.0/dropzone.css">
+    <script src="/js/libs.js"></script>
 </head>
 <body>
     <nav class="navbar navbar-inverse navbar-fixed-top">
@@ -29,5 +32,9 @@
     <div class="container">
         @yield('content')
     </div>
+    @yield('scripts.footer')
+    @include('flash')
+
 </body>
+
 </html>

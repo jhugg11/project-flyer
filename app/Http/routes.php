@@ -17,6 +17,8 @@ Route::get('/', function () {
 
 
 
+
+
 /*
 |--------------------------------------------------------------------------
 | Application Routes
@@ -29,5 +31,8 @@ Route::get('/', function () {
 */
 
 Route::group(['middleware' => ['web']], function () {
-    Route::resource('flyers', '\App\Http\Controllers\FlyersController');
+    Route::resource('flyers', 'FlyersController');
+    Route::post('{zip}/{street}/photos', ['as' =>'store_photo_path', 'uses' => 'FlyersController@addPhoto']);
+    Route::get('{zip}/{street}', 'FlyersController@show');
+
 });
