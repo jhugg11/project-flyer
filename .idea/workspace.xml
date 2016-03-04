@@ -2,31 +2,50 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7ac344bb-960a-4120-9e99-bc7702265b14" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/Http/Flash.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/helpers.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/assets/sass/partials/forms.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/views/flash.blade.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/views/flyers/show.blade.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tests/controller/FlyersControllerTest.php" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tests/ExampleTest.php" afterPath="" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/Flyer.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/Http/Controllers/Traits/AuthorizeUsers.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/Http/Requests/FlyerRequest.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/Photo.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/database/migrations/2016_03_02_201946_create_table_flyers.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/database/migrations/2016_03_02_202436_create_table_flyers_photos.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/css/libs.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/css/libs.css.map" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/libs.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/libs.js.map" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/assets/css/sweetalert.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/assets/js/sweetalert.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/views/flyers/errors.blade.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Http/Controllers/Auth/AuthController.php" afterPath="$PROJECT_DIR$/app/Http/Controllers/Auth/AuthController.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Http/Controllers/Controller.php" afterPath="$PROJECT_DIR$/app/Http/Controllers/Controller.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Http/Controllers/FlyersController.php" afterPath="$PROJECT_DIR$/app/Http/Controllers/FlyersController.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Http/routes.php" afterPath="$PROJECT_DIR$/app/Http/routes.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/User.php" afterPath="$PROJECT_DIR$/app/User.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/composer.json" afterPath="$PROJECT_DIR$/composer.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/composer.lock" afterPath="$PROJECT_DIR$/composer.lock" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/app.php" afterPath="$PROJECT_DIR$/config/app.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/database/factories/ModelFactory.php" afterPath="$PROJECT_DIR$/database/factories/ModelFactory.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/gulpfile.js" afterPath="$PROJECT_DIR$/gulpfile.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/project-flyer.iml" afterPath="$PROJECT_DIR$/project-flyer.iml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/css/app.css" afterPath="$PROJECT_DIR$/public/css/app.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/css/app.css.map" afterPath="$PROJECT_DIR$/public/css/app.css.map" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/assets/sass/app.scss" afterPath="$PROJECT_DIR$/resources/assets/sass/app.scss" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/flyers/create.blade.php" afterPath="$PROJECT_DIR$/resources/views/flyers/create.blade.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/flyers/form.blade.php" afterPath="$PROJECT_DIR$/resources/views/flyers/form.blade.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/flyers/show.blade.php" afterPath="$PROJECT_DIR$/resources/views/flyers/show.blade.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/layout.blade.php" afterPath="$PROJECT_DIR$/resources/views/layout.blade.php" />
     </list>
     <ignored path="project-flyer.iws" />
     <ignored path=".idea/workspace.xml" />
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path=".idea/dataSources.local.xml" />
+    <ignored path="public/flyers/photos/1457034382Screen Shot 2016-03-02 at 10.59.56 AM.png" />
+    <ignored path="public/flyer/photos/1457037499myGenIcon280.png" />
+    <ignored path="public/flyer/photos/1457034877Screen Shot 2016-03-01 at 1.12.57 PM.png" />
+    <ignored path="public/flyer/photos/1457037234new2013-screenshot.png" />
+    <ignored path="public/flyer/photos/1457034615Screen Shot 2016-03-02 at 10.59.56 AM.png" />
+    <ignored path="public/flyer/photos/1457034660Screen Shot 2016-03-02 at 10.59.56 AM.png" />
+    <ignored path="public/flyer/photos/1457034466Screen Shot 2016-03-02 at 10.59.56 AM.png" />
+    <ignored path="public/flyer/photos/1457034562Screen Shot 2016-03-02 at 10.59.56 AM.png" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -61,106 +80,218 @@
     <favorites_list name="project-flyer" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="FlyersController.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/Http/Controllers/FlyersController.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-12.956522">
-              <caret line="40" column="49" selection-start-line="40" selection-start-column="49" selection-end-line="40" selection-end-column="49" />
-              <folding>
-                <element signature="e#40#54#0#PHP" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Photo.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/Photo.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-15.826087">
-              <caret line="26" column="44" selection-start-line="26" selection-start-column="44" selection-end-line="26" selection-end-column="44" />
-              <folding>
-                <element signature="e#23#62#0#PHP" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="show.blade.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/resources/views/flyers/show.blade.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-18.869566">
-              <caret line="31" column="93" selection-start-line="31" selection-start-column="93" selection-end-line="31" selection-end-column="93" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Flyer.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/Flyer.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-16.0">
-              <caret line="31" column="5" selection-start-line="31" selection-start-column="5" selection-end-line="31" selection-end-column="5" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="app.scss" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/resources/assets/sass/app.scss">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-4.2608695">
-              <caret line="7" column="0" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="console.sql" pinned="false" current-in-tab="false">
-        <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/e71af6a5-0c84-437b-8cff-e0fd0fe4abec/console.sql">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-0.93333334">
-              <caret line="2" column="21" selection-start-line="2" selection-start-column="21" selection-end-line="2" selection-end-column="21" />
-              <folding>
-                <marker date="1457028735000" expanded="true" signature="23:43" placeholder="select * fro... flyers" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="form.blade.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/resources/views/flyers/form.blade.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-9.130435">
-              <caret line="15" column="70" selection-start-line="15" selection-start-column="70" selection-end-line="15" selection-end-column="70" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="create.blade.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/resources/views/flyers/create.blade.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-3.652174">
-              <caret line="6" column="23" selection-start-line="6" selection-start-column="23" selection-end-line="6" selection-end-column="23" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="routes.php" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/app/Http/routes.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.70414203">
-              <caret line="34" column="108" selection-start-line="34" selection-start-column="108" selection-end-line="34" selection-end-column="108" />
-              <folding>
-                <element signature="e#7#385#0#PHP" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <splitter split-orientation="horizontal" split-proportion="0.5">
+      <split-first>
+        <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+          <file leaf-file-name="FlyersController.php" pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/app/Http/Controllers/FlyersController.php">
+              <provider selected="true" editor-type-id="text-editor">
+                <state vertical-scroll-proportion="0.20710059">
+                  <caret line="47" column="0" selection-start-line="47" selection-start-column="0" selection-end-line="47" selection-end-column="0" />
+                  <folding>
+                    <element signature="e#40#54#0#PHP" expanded="true" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="AuthController.php" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Auth/AuthController.php">
+              <provider selected="true" editor-type-id="text-editor">
+                <state vertical-scroll-proportion="-17.043478">
+                  <caret line="34" column="6" selection-start-line="34" selection-start-column="6" selection-end-line="34" selection-end-column="6" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="register.blade.php" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/resources/views/auth/register.blade.php">
+              <provider selected="true" editor-type-id="text-editor">
+                <state vertical-scroll-proportion="-10.565217">
+                  <caret line="40" column="51" selection-start-line="40" selection-start-column="50" selection-end-line="40" selection-end-column="51" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="errors.blade.php" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/resources/views/flyers/errors.blade.php">
+              <provider selected="true" editor-type-id="text-editor">
+                <state vertical-scroll-proportion="-5.478261">
+                  <caret line="9" column="0" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="Photo.php" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/app/Photo.php">
+              <provider selected="true" editor-type-id="text-editor">
+                <state vertical-scroll-proportion="-20.086956">
+                  <caret line="33" column="5" selection-start-line="33" selection-start-column="5" selection-end-line="33" selection-end-column="5" />
+                  <folding>
+                    <element signature="e#23#60#0#PHP" expanded="true" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="2016_03_02_202436_create_table_flyers_photos.php" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/database/migrations/2016_03_02_202436_create_table_flyers_photos.php">
+              <provider selected="true" editor-type-id="text-editor">
+                <state vertical-scroll-proportion="-21.913044">
+                  <caret line="37" column="0" selection-start-line="37" selection-start-column="0" selection-end-line="37" selection-end-column="0" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="show.blade.php" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/resources/views/flyers/show.blade.php">
+              <provider selected="true" editor-type-id="text-editor">
+                <state vertical-scroll-proportion="-5.0434785">
+                  <caret line="14" column="33" selection-start-line="14" selection-start-column="33" selection-end-line="14" selection-end-column="33" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="Controller.php" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Controller.php">
+              <provider selected="true" editor-type-id="text-editor">
+                <state vertical-scroll-proportion="-12.173913">
+                  <caret line="24" column="0" selection-start-line="24" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="Flyer.php" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/app/Flyer.php">
+              <provider selected="true" editor-type-id="text-editor">
+                <state vertical-scroll-proportion="-20.26087">
+                  <caret line="41" column="0" selection-start-line="41" selection-start-column="0" selection-end-line="41" selection-end-column="0" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+        </leaf>
+      </split-first>
+      <split-second>
+        <leaf>
+          <file leaf-file-name="routes.php" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/app/Http/routes.php">
+              <provider selected="true" editor-type-id="text-editor">
+                <state vertical-scroll-proportion="-7.9130435">
+                  <caret line="13" column="0" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
+                  <folding>
+                    <element signature="e#7#385#0#PHP" expanded="true" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="PagesController.php" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/app/Http/Controllers/PagesController.php">
+              <provider selected="true" editor-type-id="text-editor">
+                <state vertical-scroll-proportion="-6.0869565">
+                  <caret line="12" column="34" selection-start-line="12" selection-start-column="34" selection-end-line="12" selection-end-column="34" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="app.scss" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/resources/assets/sass/app.scss">
+              <provider selected="true" editor-type-id="text-editor">
+                <state vertical-scroll-proportion="-8.521739">
+                  <caret line="14" column="1" selection-start-line="14" selection-start-column="1" selection-end-line="14" selection-end-column="1" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="layout.blade.php" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/resources/views/layout.blade.php">
+              <provider selected="true" editor-type-id="text-editor">
+                <state vertical-scroll-proportion="-20.695652">
+                  <caret line="34" column="14" selection-start-line="34" selection-start-column="14" selection-end-line="34" selection-end-column="14" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="AuthorizeUsers.php" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Traits/AuthorizeUsers.php">
+              <provider selected="true" editor-type-id="text-editor">
+                <state vertical-scroll-proportion="-15.826087">
+                  <caret line="26" column="1" selection-start-line="26" selection-start-column="1" selection-end-line="26" selection-end-column="1" />
+                  <folding>
+                    <element signature="e#47#61#0#PHP" expanded="true" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="User.php" pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/app/User.php">
+              <provider selected="true" editor-type-id="text-editor">
+                <state vertical-scroll-proportion="0.57988167">
+                  <caret line="28" column="47" selection-start-line="28" selection-start-column="47" selection-end-line="28" selection-end-column="47" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="app.blade.php" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/resources/views/layouts/app.blade.php">
+              <provider selected="true" editor-type-id="text-editor">
+                <state vertical-scroll-proportion="-20.608696">
+                  <caret line="48" column="43" selection-start-line="48" selection-start-column="43" selection-end-line="48" selection-end-column="43" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="2016_03_02_201946_create_table_flyers.php" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/database/migrations/2016_03_02_201946_create_table_flyers.php">
+              <provider selected="true" editor-type-id="text-editor">
+                <state vertical-scroll-proportion="-18.869566">
+                  <caret line="31" column="19" selection-start-line="31" selection-start-column="19" selection-end-line="31" selection-end-column="19" />
+                  <folding>
+                    <element signature="e#7#48#0#PHP" expanded="true" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="ModelFactory.php" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/database/factories/ModelFactory.php">
+              <provider selected="true" editor-type-id="text-editor">
+                <state vertical-scroll-proportion="-15.217391">
+                  <caret line="34" column="3" selection-start-line="34" selection-start-column="3" selection-end-line="34" selection-end-column="3" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="console.sql" pinned="false" current-in-tab="false">
+            <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/e71af6a5-0c84-437b-8cff-e0fd0fe4abec/console.sql">
+              <provider selected="true" editor-type-id="text-editor">
+                <state vertical-scroll-proportion="-0.93333334">
+                  <caret line="2" column="21" selection-start-line="2" selection-start-column="21" selection-end-line="2" selection-end-column="21" />
+                  <folding>
+                    <marker date="1457028735000" expanded="true" signature="23:43" placeholder="select * fro... flyers" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+        </leaf>
+      </split-second>
+    </splitter>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -174,13 +305,10 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/config/database.php" />
-        <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/resources/views/pages/create.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/pages/home.blade.php" />
         <option value="$PROJECT_DIR$/app/Http/Utilities/Country.php" />
-        <option value="$PROJECT_DIR$/database/migrations/2016_03_02_201946_create_table_flyers.php" />
         <option value="$PROJECT_DIR$/database/database.sqlite" />
-        <option value="$PROJECT_DIR$/database/factories/ModelFactory.php" />
         <option value="$PROJECT_DIR$/resources/assets/sass/partials/forms.scss" />
         <option value="$PROJECT_DIR$/app/Http/Requests/FlyerRequest.php" />
         <option value="$PROJECT_DIR$/gulpfile.js" />
@@ -188,20 +316,29 @@
         <option value="$PROJECT_DIR$/resources/views/flash.blade.php" />
         <option value="$PROJECT_DIR$/app/Http/Flash.php" />
         <option value="$PROJECT_DIR$/app/helpers.php" />
-        <option value="$PROJECT_DIR$/resources/views/layout.blade.php" />
         <option value="$APPLICATION_CONFIG_DIR$/consoles/db/60f99302-3643-4216-88f3-ad77f97f6f60/console.sql" />
-        <option value="$PROJECT_DIR$/database/migrations/2016_03_02_202436_create_table_flyers_photos.php" />
         <option value="$APPLICATION_CONFIG_DIR$/consoles/db/e71af6a5-0c84-437b-8cff-e0fd0fe4abec/console.sql" />
-        <option value="$PROJECT_DIR$/resources/views/flyers/form.blade.php" />
-        <option value="$PROJECT_DIR$/config/app.php" />
-        <option value="$PROJECT_DIR$/resources/views/flyers/create.blade.php" />
         <option value="$PROJECT_DIR$/tests/controller/FlyersControllerTest.php" />
-        <option value="$PROJECT_DIR$/resources/assets/sass/app.scss" />
-        <option value="$PROJECT_DIR$/app/Flyer.php" />
-        <option value="$PROJECT_DIR$/app/Http/Controllers/FlyersController.php" />
+        <option value="$PROJECT_DIR$/.gitignore" />
+        <option value="$PROJECT_DIR$/resources/views/flyers/create.blade.php" />
+        <option value="$PROJECT_DIR$/resources/views/flyers/form.blade.php" />
+        <option value="$PROJECT_DIR$/resources/views/flyers/errors.blade.php" />
+        <option value="$PROJECT_DIR$/config/app.php" />
+        <option value="$PROJECT_DIR$/database/migrations/2016_03_02_202436_create_table_flyers_photos.php" />
         <option value="$PROJECT_DIR$/app/Photo.php" />
-        <option value="$PROJECT_DIR$/resources/views/flyers/show.blade.php" />
+        <option value="$PROJECT_DIR$/resources/assets/sass/app.scss" />
+        <option value="$PROJECT_DIR$/resources/views/layout.blade.php" />
+        <option value="$PROJECT_DIR$/app/Http/Controllers/PagesController.php" />
         <option value="$PROJECT_DIR$/app/Http/routes.php" />
+        <option value="$PROJECT_DIR$/app/Http/Controllers/Auth/AuthController.php" />
+        <option value="$PROJECT_DIR$/database/migrations/2016_03_02_201946_create_table_flyers.php" />
+        <option value="$PROJECT_DIR$/database/factories/ModelFactory.php" />
+        <option value="$PROJECT_DIR$/app/Flyer.php" />
+        <option value="$PROJECT_DIR$/app/Http/Controllers/Controller.php" />
+        <option value="$PROJECT_DIR$/app/Http/Controllers/FlyersController.php" />
+        <option value="$PROJECT_DIR$/app/Http/Controllers/Traits/AuthorizeUsers.php" />
+        <option value="$PROJECT_DIR$/app/User.php" />
+        <option value="$PROJECT_DIR$/resources/views/flyers/show.blade.php" />
       </list>
     </option>
   </component>
@@ -279,6 +416,9 @@
       <path value="$PROJECT_DIR$/vendor/symfony/class-loader" />
       <path value="$PROJECT_DIR$/vendor/symfony/polyfill-apcu" />
       <path value="$PROJECT_DIR$/vendor/barryvdh/laravel-ide-helper" />
+      <path value="$PROJECT_DIR$/vendor/psr/http-message" />
+      <path value="$PROJECT_DIR$/vendor/guzzlehttp/psr7" />
+      <path value="$PROJECT_DIR$/vendor/intervention/image" />
     </include_path>
   </component>
   <component name="ProjectFrameBounds">
@@ -328,38 +468,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="project-flyer" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="project-flyer" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="project-flyer" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="vendor" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="project-flyer" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="project-flyer" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="vendor" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="phpunit" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -713,6 +821,32 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="project-flyer" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="project-flyer" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Http" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Controllers" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Traits" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
         </subPane>
       </pane>
       <pane id="PackagesPane" />
@@ -725,7 +859,7 @@
     <property name="settings.editor.splitter.proportion" value="0.2" />
     <property name="WebServerToolWindowFactoryState" value="true" />
     <property name="js-jscs-nodeInterpreter" value="/usr/local/bin/node" />
-    <property name="SearchEverywhereHistoryKey" value="photo&#9;FILE&#9;file:///Users/hugg/IdeaProjects/project-flyer/app/Photo.php&#10;app.sc&#9;FILE&#9;file:///Users/hugg/IdeaProjects/project-flyer/resources/assets/sass/app.scss&#10;show.&#9;FILE&#9;file:///Users/hugg/IdeaProjects/project-flyer/resources/views/flyers/show.blade.php&#10;flyer&#9;FILE&#9;file:///Users/hugg/IdeaProjects/project-flyer/app/Flyer.php&#10;create&#9;FILE&#9;file:///Users/hugg/IdeaProjects/project-flyer/resources/views/flyers/create.blade.php&#10;form&#9;FILE&#9;file:///Users/hugg/IdeaProjects/project-flyer/resources/views/flyers/form.blade.php&#10;route&#9;FILE&#9;file:///Users/hugg/IdeaProjects/project-flyer/app/Http/routes.php&#10;flyer.php&#9;FILE&#9;file:///Users/hugg/IdeaProjects/project-flyer/app/Flyer.php&#10;f&#9;FILE&#9;file:///Users/hugg/IdeaProjects/project-flyer/app/Http/Controllers/FlyersController.php&#10;routes&#9;FILE&#9;file:///Users/hugg/IdeaProjects/project-flyer/app/Http/routes.php&#10;helpers&#9;FILE&#9;file:///Users/hugg/IdeaProjects/project-flyer/app/helpers.php&#10;gu&#9;FILE&#9;file:///Users/hugg/IdeaProjects/project-flyer/gulpfile.js&#10;flyerre&#9;null&#9;null&#10;createphotos&#9;FILE&#9;file:///Users/hugg/IdeaProjects/project-flyer/database/migrations/2016_03_02_202436_create_table_flyers_photos.php&#10;app.s&#9;FILE&#9;file:///Users/hugg/IdeaProjects/project-flyer/resources/assets/sass/app.scss&#10;creat&#9;FILE&#9;file:///Users/hugg/IdeaProjects/project-flyer/resources/views/flyers/create.blade.php&#10;modelfac&#9;FILE&#9;file:///Users/hugg/IdeaProjects/project-flyer/database/factories/ModelFactory.php&#10;createtab&#9;null&#9;null&#10;fl&#9;FILE&#9;file:///Users/hugg/IdeaProjects/project-flyer/app/Http/Controllers/FlyersController.php&#10;layout&#9;FILE&#9;file:///Users/hugg/IdeaProjects/project-flyer/resources/views/layout.blade.php&#10;routes.php&#9;FILE&#9;file:///Users/hugg/IdeaProjects/project-flyer/app/Http/routes.php&#10;gulp&#9;FILE&#9;file:///Users/hugg/IdeaProjects/project-flyer/gulpfile.js" />
+    <property name="SearchEverywhereHistoryKey" value="user&#9;null&#9;null&#10;show&#9;FILE&#9;file:///Users/hugg/IdeaProjects/project-flyer/resources/views/flyers/show.blade.php&#10;controller&#9;FILE&#9;file:///Users/hugg/IdeaProjects/project-flyer/app/Http/Controllers/Controller.php&#10;flyer&#9;FILE&#9;file:///Users/hugg/IdeaProjects/project-flyer/app/Flyer.php&#10;model&#9;FILE&#9;file:///Users/hugg/IdeaProjects/project-flyer/database/factories/ModelFactory.php&#10;authcon&#9;FILE&#9;file:///Users/hugg/IdeaProjects/project-flyer/app/Http/Controllers/Auth/AuthController.php&#10;lay&#9;FILE&#9;file:///Users/hugg/IdeaProjects/project-flyer/resources/views/layout.blade.php&#10;pagescon&#9;null&#9;null&#10;app.&#9;FILE&#9;file:///Users/hugg/IdeaProjects/project-flyer/resources/assets/sass/app.scss&#10;createfl&#9;FILE&#9;file:///Users/hugg/IdeaProjects/project-flyer/database/migrations/2016_03_02_202436_create_table_flyers_photos.php&#10;photo&#9;FILE&#9;file:///Users/hugg/IdeaProjects/project-flyer/app/Photo.php&#10;config/app&#9;FILE&#9;file:///Users/hugg/IdeaProjects/project-flyer/config/app.php&#10;register&#9;FILE&#9;file:///Users/hugg/IdeaProjects/project-flyer/resources/views/auth/register.blade.php&#10;auth&#9;null&#9;null&#10;app.sc&#9;FILE&#9;file:///Users/hugg/IdeaProjects/project-flyer/resources/assets/sass/app.scss&#10;show.&#9;FILE&#9;file:///Users/hugg/IdeaProjects/project-flyer/resources/views/flyers/show.blade.php&#10;create&#9;FILE&#9;file:///Users/hugg/IdeaProjects/project-flyer/resources/views/flyers/create.blade.php&#10;form&#9;FILE&#9;file:///Users/hugg/IdeaProjects/project-flyer/resources/views/flyers/form.blade.php&#10;route&#9;FILE&#9;file:///Users/hugg/IdeaProjects/project-flyer/app/Http/routes.php&#10;flyer.php&#9;FILE&#9;file:///Users/hugg/IdeaProjects/project-flyer/app/Flyer.php&#10;f&#9;FILE&#9;file:///Users/hugg/IdeaProjects/project-flyer/app/Http/Controllers/FlyersController.php&#10;routes&#9;FILE&#9;file:///Users/hugg/IdeaProjects/project-flyer/app/Http/routes.php&#10;helpers&#9;FILE&#9;file:///Users/hugg/IdeaProjects/project-flyer/app/helpers.php&#10;gu&#9;FILE&#9;file:///Users/hugg/IdeaProjects/project-flyer/gulpfile.js&#10;flyerre&#9;null&#9;null&#10;createphotos&#9;FILE&#9;file:///Users/hugg/IdeaProjects/project-flyer/database/migrations/2016_03_02_202436_create_table_flyers_photos.php&#10;app.s&#9;FILE&#9;file:///Users/hugg/IdeaProjects/project-flyer/resources/assets/sass/app.scss&#10;creat&#9;FILE&#9;file:///Users/hugg/IdeaProjects/project-flyer/resources/views/flyers/create.blade.php&#10;modelfac&#9;FILE&#9;file:///Users/hugg/IdeaProjects/project-flyer/database/factories/ModelFactory.php&#10;createtab&#9;null&#9;null&#10;fl&#9;FILE&#9;file:///Users/hugg/IdeaProjects/project-flyer/app/Http/Controllers/FlyersController.php&#10;layout&#9;FILE&#9;file:///Users/hugg/IdeaProjects/project-flyer/resources/views/layout.blade.php&#10;routes.php&#9;FILE&#9;file:///Users/hugg/IdeaProjects/project-flyer/app/Http/routes.php&#10;gulp&#9;FILE&#9;file:///Users/hugg/IdeaProjects/project-flyer/gulpfile.js" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -1145,7 +1279,19 @@
       <option name="project" value="LOCAL" />
       <updated>1456951010927</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="add Dropzone integration">
+      <created>1457100698831</created>
+      <option name="number" value="00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1457100698832</updated>
+    </task>
+    <task id="LOCAL-00007" summary="add missing files&#10;">
+      <created>1457100784105</created>
+      <option name="number" value="00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1457100784105</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -1161,11 +1307,11 @@
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3299539" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Remote Host" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Database Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3299539" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Database Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3299539" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.09353287" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.20951363" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3299539" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3299539" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -1194,7 +1340,9 @@
     <MESSAGE value="setup form page" />
     <MESSAGE value="add form partial to flyers/" />
     <MESSAGE value="add models and migrations" />
-    <option name="LAST_COMMIT_MESSAGE" value="add models and migrations" />
+    <MESSAGE value="add Dropzone integration" />
+    <MESSAGE value="add missing files&#10;" />
+    <option name="LAST_COMMIT_MESSAGE" value="add missing files&#10;" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1203,14 +1351,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/.env">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="23" column="0" selection-start-line="23" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -1239,9 +1379,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="19" column="2" selection-start-line="19" selection-start-column="2" selection-end-line="19" selection-end-column="2" />
-          <folding>
-            <element signature="e#7#385#0#PHP" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1295,14 +1433,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/.gitignore">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="7" column="0" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/public/css/app.css.map">
       <provider editor-type-id="sourcemapFileViewerProvider">
         <state />
@@ -1310,6 +1440,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1341,24 +1472,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/database/migrations/2016_03_02_201946_create_table_flyers.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-20.695652">
-          <caret line="34" column="31" selection-start-line="34" selection-start-column="31" selection-end-line="34" selection-end-column="31" />
-          <folding>
-            <element signature="e#7#48#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/database/factories/ModelFactory.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-14.608696">
-          <caret line="33" column="3" selection-start-line="33" selection-start-column="3" selection-end-line="33" selection-end-column="3" />
           <folding />
         </state>
       </provider>
@@ -1439,50 +1552,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/database/migrations/2016_03_02_202436_create_table_flyers_photos.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-6.695652">
-          <caret line="12" column="24" selection-start-line="12" selection-start-column="24" selection-end-line="12" selection-end-column="24" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/.env">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="23" column="0" selection-start-line="23" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/config/app.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.10939907">
-          <caret line="28" column="37" selection-start-line="28" selection-start-column="32" selection-end-line="28" selection-end-column="37" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/layout.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.49704143">
-          <caret line="24" column="49" selection-start-line="24" selection-start-column="49" selection-end-line="24" selection-end-column="49" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/flyers/create.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-3.652174">
-          <caret line="6" column="23" selection-start-line="6" selection-start-column="23" selection-end-line="6" selection-end-column="23" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/flyers/form.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-9.130435">
-          <caret line="15" column="70" selection-start-line="15" selection-start-column="70" selection-end-line="15" selection-end-column="70" />
           <folding />
         </state>
       </provider>
@@ -1497,6 +1570,90 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/public/flyer/photos/1457037234new2013-screenshot.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.17283951">
+          <caret line="7" column="0" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/flyers/form.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-29.217392">
+          <caret line="48" column="14" selection-start-line="48" selection-start-column="14" selection-end-line="48" selection-end-column="14" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/flyers/create.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-11.565217">
+          <caret line="19" column="5" selection-start-line="19" selection-start-column="5" selection-end-line="19" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/auth/register.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-10.565217">
+          <caret line="40" column="51" selection-start-line="40" selection-start-column="50" selection-end-line="40" selection-end-column="51" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/flyers/errors.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-5.478261">
+          <caret line="9" column="0" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/app.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.7928994">
+          <caret line="205" column="62" selection-start-line="205" selection-start-column="62" selection-end-line="205" selection-end-column="62" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/database/migrations/2016_03_02_202436_create_table_flyers_photos.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-21.913044">
+          <caret line="37" column="0" selection-start-line="37" selection-start-column="0" selection-end-line="37" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Photo.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-20.086956">
+          <caret line="33" column="5" selection-start-line="33" selection-start-column="5" selection-end-line="33" selection-end-column="5" />
+          <folding>
+            <element signature="e#23#60#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/flyer/photos/tn-1457112395-myGenIcon57.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/assets/sass/app.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-8.521739">
+          <caret line="14" column="1" selection-start-line="14" selection-start-column="1" selection-end-line="14" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/e71af6a5-0c84-437b-8cff-e0fd0fe4abec/console.sql">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-0.93333334">
@@ -1507,61 +1664,114 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/resources/assets/sass/app.scss">
+    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/PagesController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-4.2608695">
-          <caret line="7" column="0" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Flyer.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-16.0">
-          <caret line="31" column="5" selection-start-line="31" selection-start-column="5" selection-end-line="31" selection-end-column="5" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/flyer/photos/1457037234new2013-screenshot.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/FlyersController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-12.956522">
-          <caret line="40" column="49" selection-start-line="40" selection-start-column="49" selection-end-line="40" selection-end-column="49" />
-          <folding>
-            <element signature="e#40#54#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Photo.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-15.826087">
-          <caret line="26" column="44" selection-start-line="26" selection-start-column="44" selection-end-line="26" selection-end-column="44" />
-          <folding>
-            <element signature="e#23#62#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/flyers/show.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-18.869566">
-          <caret line="31" column="93" selection-start-line="31" selection-start-column="93" selection-end-line="31" selection-end-column="93" />
+        <state vertical-scroll-proportion="-6.0869565">
+          <caret line="12" column="34" selection-start-line="12" selection-start-column="34" selection-end-line="12" selection-end-column="34" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/Http/routes.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.70414203">
-          <caret line="34" column="108" selection-start-line="34" selection-start-column="108" selection-end-line="34" selection-end-column="108" />
+        <state vertical-scroll-proportion="-7.9130435">
+          <caret line="13" column="0" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
           <folding>
             <element signature="e#7#385#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/layout.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-20.695652">
+          <caret line="34" column="14" selection-start-line="34" selection-start-column="14" selection-end-line="34" selection-end-column="14" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Auth/AuthController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-17.043478">
+          <caret line="34" column="6" selection-start-line="34" selection-start-column="6" selection-end-line="34" selection-end-column="6" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/layouts/app.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-20.608696">
+          <caret line="48" column="43" selection-start-line="48" selection-start-column="43" selection-end-line="48" selection-end-column="43" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/database/migrations/2016_03_02_201946_create_table_flyers.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-18.869566">
+          <caret line="31" column="19" selection-start-line="31" selection-start-column="19" selection-end-line="31" selection-end-column="19" />
+          <folding>
+            <element signature="e#7#48#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Flyer.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-20.26087">
+          <caret line="41" column="0" selection-start-line="41" selection-start-column="0" selection-end-line="41" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/database/factories/ModelFactory.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-15.217391">
+          <caret line="34" column="3" selection-start-line="34" selection-start-column="3" selection-end-line="34" selection-end-column="3" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Controller.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-12.173913">
+          <caret line="24" column="0" selection-start-line="24" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Traits/AuthorizeUsers.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-15.826087">
+          <caret line="26" column="1" selection-start-line="26" selection-start-column="1" selection-end-line="26" selection-end-column="1" />
+          <folding>
+            <element signature="e#47#61#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/User.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.57988167">
+          <caret line="28" column="47" selection-start-line="28" selection-start-column="47" selection-end-line="28" selection-end-column="47" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/flyers/show.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-5.0434785">
+          <caret line="14" column="33" selection-start-line="14" selection-start-column="33" selection-end-line="14" selection-end-column="33" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/FlyersController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.20710059">
+          <caret line="47" column="0" selection-start-line="47" selection-start-column="0" selection-end-line="47" selection-end-column="0" />
+          <folding>
+            <element signature="e#40#54#0#PHP" expanded="true" />
           </folding>
         </state>
       </provider>

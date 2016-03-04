@@ -11,11 +11,6 @@
 |
 */
 
-Route::get('/', function () {
-    return view('pages.home');
-});
-
-
 
 
 
@@ -30,7 +25,9 @@ Route::get('/', function () {
 |
 */
 
-Route::group(['middleware' => ['web']], function () {
+Route::group(['middleware' => 'web'], function () {
+    Route::auth();
+    Route::get('/', 'PagesController@home');
     Route::resource('flyers', 'FlyersController');
     Route::post('{zip}/{street}/photos', ['as' =>'store_photo_path', 'uses' => 'FlyersController@addPhoto']);
     Route::get('{zip}/{street}', 'FlyersController@show');
